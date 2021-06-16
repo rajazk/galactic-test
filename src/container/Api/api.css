@@ -1,0 +1,15 @@
+.key-info h4 {
+  color: #344562;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  margin-bottom: 8px;
+}
+input[type="text"] {
+  background: #efeff8;
+  border: 1px solid #efeff8;
+  border-radius: 8px;
+  padding: 17px;
+  width: 100%;
+  margin-bottom: 24px;
+}

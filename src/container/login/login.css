@@ -1,0 +1,135 @@
+.Login-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.row-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.row-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.login-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.login-form h3 {
+  width: 480px;
+  height: 48px;
+  margin-bottom: 40px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: #344562;
+}
+.form-control label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #344562;
+  margin-bottom: 8px;
+}
+.form-control input {
+  border: 1px solid #efeff8;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 480px;
+  margin-bottom: 26px;
+}
+.form-control button {
+  width: 480px;
+  padding: 18px 0px;
+  color: #ffffff;
+  background: #1a88e8;
+  border-radius: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  border: none;
+}
+.container-img {
+  position: relative;
+  width: 50%;
+}
+.container-img img {
+  width: 100%;
+  /* height: 100vh; */
+  height: 100%;
+  opacity: 0.5;
+}
+.container-img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: -1;
+  background: linear-gradient(180deg, #78bcff 0%, #0073e6 100%);
+}
+
+.login-button button {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .row-left {
+    width: 100%;
+    padding: 15px;
+  }
+  .login-form {
+    width: 100%;
+  }
+  .login-form h3 {
+    width: 100%;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .form-control input {
+    width: 100%;
+  }
+  .row-right {
+    display: none;
+  }
+  .login-button {
+    display: flex;
+  }
+  .login-button button {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .login-form {
+    width: 80%;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .form-control input {
+    width: 100%;
+  }
+  .form-control button {
+    width: 100%;
+  }
+}
